@@ -10,16 +10,22 @@ app.config['SECRET_KEY'] = '8ff03f6a654f706dbdd77437f0947a60'
 
 posts = [
     {
-        'author': 'Corey Schafer',
+        'author': 'Ben Alterman',
         'title': 'Blog Post 1',
         'content': 'First post content',
-        'date_posted': 'April 20, 2018'
+        'date_posted': 'November 3, 2019'
     },
     {
-        'author': 'Jane Doe',
+        'author': 'Emilia Garcia',
         'title': 'Blog Post 2',
         'content': 'Second post content',
-        'date_posted': 'April 21, 2018'
+        'date_posted': 'November 3, 2019'
+    },
+    {
+        'author': 'Pravina Pidikiti',
+        'title': 'Blog Post 3',
+        'content': 'Third post content',
+        'date_posted': 'November 3, 2019'
     }
 ]
 
