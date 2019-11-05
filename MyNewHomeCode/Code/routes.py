@@ -13,7 +13,7 @@ posts = [
         'date_posted': 'November 4, 2019'
     },
     {
-        'author': 'Jane Doe',
+        'author': 'Pravina Pidikiti',
         'title': 'Blog Post 2',
         'content': 'Second post content',
         'date_posted': 'April 21, 2018'
