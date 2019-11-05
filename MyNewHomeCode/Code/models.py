@@ -1,5 +1,5 @@
 from datetime import datetime
-from MyNewHome import db, login_manager
+from Code import db, login_manager
 from flask_login import UserMixin
 
 
