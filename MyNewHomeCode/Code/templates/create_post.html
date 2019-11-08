@@ -23,10 +23,10 @@
                 {% if form.content.errors %}
                     {{ form.content(class="form-control form-control-lg is-invalid") }}
                     <div class="invalid-feedback">
-                        {% for error in form.password.errors %}
+                        {% for error in form.content.errors %}
                             <span>{{ error }}</span>
                         {% endfor %}
-                    </div> 
+                    </div>
                 {% else %}
                     {{ form.content(class="form-control form-control-lg") }}
                 {% endif %}
@@ -36,5 +36,5 @@
             {{ form.submit(class="btn btn-outline-info") }}
         </div>
     </form>
-</div>    
+</div>
 {% endblock content %}
