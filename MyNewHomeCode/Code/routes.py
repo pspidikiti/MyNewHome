@@ -3,7 +3,8 @@ import secrets
 from PIL import Image
 from flask import render_template, url_for, flash, redirect, request, abort
 from Code import app, db, bcrypt
-from Code.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm
+from Code.forms import (RegistrationForm, LoginForm, UpdateAccountForm, 
+    PostForm, RequestResetForm, ResetPasswordForm)
 from Code.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 
@@ -63,12 +64,10 @@ def save_picture(form_picture):
     _, f_ext = os.path.splitext(form_picture.filename)
     picture_fn = random_hex + f_ext
     picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
-
     output_size = (125, 125)
     i = Image.open(form_picture)
     i.thumbnail(output_size)
     i.save(picture_path)
-
     return picture_fn
 
 
@@ -153,3 +152,11 @@ def user_posts(username):
         .order_by(Post.date_posted.desc())\
         .paginate(page=page, per_page=5)
     return render_template('user_posts.html', posts=posts, user=user)
+
+
+@app.route("/reset_password", methods=['GET', 'POST'])
+def reset_request():
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
+    form = RequestResetForm()
+    return render_template('reset_requests.html', title='Reset Password', form=form)
