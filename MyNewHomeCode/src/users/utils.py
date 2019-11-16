@@ -1,3 +1,4 @@
+
 import os
 import secrets
 from PIL import Image
@@ -30,3 +31,4 @@ def send_reset_email(user):
 If you did not make this request then simply ignore this email and no changes will be made.
 '''
     mail.send(msg)
+
