@@ -25,6 +25,7 @@ Flask-Login==0.4.1
 Flask-Mail==0.9.1
 Flask-SQLAlchemy==2.4.1
 Flask-WTF==0.14.2
+gunicorn==20.0.0
 idna==2.8
 imagesize==1.1.0
 importlib-metadata==0.23
