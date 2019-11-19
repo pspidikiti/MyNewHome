@@ -1,3 +1,5 @@
+# Created by Benjamin Alterman, Emilia Garcia, and Pravina Pidikiti
+
 from src import create_app
 
 app = create_app()
