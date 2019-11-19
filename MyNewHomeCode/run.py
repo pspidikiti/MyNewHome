@@ -1,4 +1,4 @@
-# Created by Benjamin Alterman, Emilia Garcia, and Pravina Pidikiti
+# Created by Benjamin Alterman, Emilia Garcia-Saravia, and Pravina Pidikiti
 
 from src import create_app
 
