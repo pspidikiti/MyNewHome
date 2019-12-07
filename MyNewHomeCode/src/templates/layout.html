@@ -36,8 +36,7 @@
                 <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Update Account Info</a>
                 <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
               {% else %}
-                <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Sign In To Existing Account</a>
-                <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Create A New Account</a>
+                <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Admin Sign In</a>
               {% endif %}
             </div>
           </div>
